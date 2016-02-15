@@ -1,0 +1,22 @@
+div(ng-controller='FilterCtrl', layout='column', ng-cloak='')
+  section(layout='row', flex='')
+    md-sidenav.md-sidenav-left.md-whiteframe-z2(md-component-id='left', md-is-locked-open="$mdMedia('gt-md')")
+      md-toolbar.md-theme-indigo(ng-controller='LeftCtrl')
+        h1.md-toolbar-tools Filtro
+          span.flex(flex='')
+          md-button.md-icon-button(aria-label="Favorite", ng-click='close()', hide-gt-md='')
+            md-icon( md-svg-icon="images/back.svg")
+        
+      md-content(layout-padding='', ng-controller='LeftCtrl')
+        md-button.md-primary(ng-click='close()', hide-gt-md='')
+          | Close Sidenav Left
+        p(hide-md='', show-gt-md='')
+          | This sidenav is locked open on your device. To go back to the default behavior,
+          | narrow your display.
+
+div(id='filter', ng-controller="FilterCtrl", ng-cloak="")
+  md-fab-speed-dial(md-open='false')
+    md-fab-trigger
+      md-button.md-fab.md-raised(aria-label='menu', ng-click="toggleLeft()")
+        md-tooltip(md-direction='right', md-visible='false') Filtro
+        md-icon(md-svg-src='images/filter.svg')

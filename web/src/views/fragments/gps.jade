@@ -1,0 +1,6 @@
+div(id='gps', ng-controller="GpsCtrl as ctrl", ng-cloak="", ng-init="getLocation()")
+  md-fab-speed-dial(md-open='false',ng-hide="ctrl.hidden")
+    md-fab-trigger
+      md-button.md-fab.md-raised(aria-label='menu', ng-click="getLocation()")
+        md-tooltip(md-direction='right', md-visible='false') Minha Localização
+        md-icon(md-svg-src='images/gps.svg')

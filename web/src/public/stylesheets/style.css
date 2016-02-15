@@ -5,25 +5,28 @@ html, body, #map{
   width: 100%;
 }
 
-#config,
+#map{
+  z-index: 0;
+}
+
+#filter,
 #types,
 #gps{
   display: block;
 	position: absolute;
-  z-index: 1000;
 }
 
-#config{
+#filter{
   bottom: 20px;
 	left: 0px;
 }
 
 #types{
-	bottom: 90px;
+	bottom: 20px;
 	right: 0px;
 }
 
 #gps{
-	bottom: 20px;
-	right: 0px;
+	bottom: 90px;
+	left: 0px;
 }

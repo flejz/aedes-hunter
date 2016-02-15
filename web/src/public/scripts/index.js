@@ -5,7 +5,7 @@ var app;
   'use strict';
   app = angular.module('app', ['ngMaterial']).config(function(
     $mdThemingProvider) {
-    $mdThemingProvider.theme('altTheme')
+    $mdThemingProvider.theme('defaultTheme')
       .primaryPalette('deep-purple')
       .accentPalette('deep-purple')
       .warnPalette('deep-purple');
@@ -22,31 +22,7 @@ var app;
       .accentPalette('lime')
       .warnPalette('lime');
   });
-  app.controller('GpsCtrl', function($scope, $mdDialog, $timeout) {
-    var self = this;
-    self.tooltipVisible = false;
 
-    // gets the gps location
-    $scope.getLocation = function() {
-
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function showPosition(
-          position) {
-
-          //getting the latlong, adding to the map and zoom to it
-          var latlng = [position.coords.latitude, position.coords.longitude];
-          var marker = L.marker(latlng).addTo(map);
-          map.setView(latlng, 15);
-
-        });
-      } else {
-        alert("Geolocation is not supported by this browser.");
-      }
-
-
-    };
-
-  });
   app.controller('TypeCtrl', function($scope, $mdDialog, $timeout) {
     var self = this;
     self.topDirections = ['left', 'up'];
@@ -71,6 +47,70 @@ var app;
     });
 
   });
+
+  app.controller('FilterCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+      $scope.toggleLeft = buildToggler('left');
+      $scope.isOpenRight = function(){
+        return $mdSidenav('right').isOpen();
+      };
+      /**
+       * Supplies a function that will continue to operate until the
+       * time is up.
+       */
+      function debounce(func, wait, context) {
+        var timer;
+        return function debounced() {
+          var context = $scope,
+              args = Array.prototype.slice.call(arguments);
+          $timeout.cancel(timer);
+          timer = $timeout(function() {
+            timer = undefined;
+            func.apply(context, args);
+          }, wait || 10);
+        };
+      }
+      /**
+       * Build handler to open/close a SideNav; when animation finishes
+       * report completion in console
+       */
+      function buildDelayedToggler(navID) {
+        return debounce(function() {
+          $mdSidenav(navID)
+            .toggle()
+            .then(function () {
+              $log.debug("toggle " + navID + " is done");
+            });
+        }, 200);
+      }
+      function buildToggler(navID) {
+        return function() {
+          $mdSidenav(navID)
+            .toggle()
+            .then(function () {
+              $log.debug("toggle " + navID + " is done");
+            });
+        }
+      }
+    })
+    .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+      $scope.close = function () {
+        $mdSidenav('left').close()
+          .then(function () {
+            $log.debug("close LEFT is done");
+          });
+      };
+    })
+    .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+      $scope.close = function () {
+        $mdSidenav('right').close()
+          .then(function () {
+            $log.debug("close RIGHT is done");
+          });
+      };
+    });
+
+
+
 })();
 
 var map = L.map('map').setView([51.505, -0.09], 13);

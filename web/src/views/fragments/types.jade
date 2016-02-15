@@ -1,0 +1,16 @@
+div(id='types', ng-controller='TypeCtrl as ctrl', ng-cloak='')
+  md-fab-speed-dial(md-open='ctrl.isOpen', md-direction='{{ctrl.selectedDirection}}', ng-class='ctrl.selectedMode', ng-mouseenter="ctrl.isOpen=true" ng-mouseleave="ctrl.isOpen=false")
+    md-fab-trigger
+      md-button.md-fab.md-primary(aria-label='menu')
+        md-tooltip(md-direction='left', md-visible='tooltipVisible') Tipos
+        md-icon(md-svg-src='images/mosquito.svg')
+    md-fab-actions
+      md-button.md-fab.md-raised.md-mini.md-accent(aria-label='Chikungunya', md-theme="chikungunyaTheme")
+        md-tooltip(md-direction='left', md-visible='tooltipVisible', md-autohide='false') Chikungunya
+        md-icon(md-svg-src='images/mosquito.svg', aria-label='Chikungunya')
+      md-button.md-fab.md-raised.md-mini.md-accent(aria-label='Dengue' , md-theme="dengueTheme")
+        md-tooltip(md-direction='left', md-visible='tooltipVisible') Dengue
+        md-icon(md-svg-src='images/mosquito.svg', aria-label='Dengue')
+      md-button.md-fab.md-raised.md-mini.md-accent(aria-label='Zika', md-theme="zikaTheme")
+        md-tooltip(md-direction='left', md-visible='tooltipVisible') Zika
+        md-icon(md-svg-src='images/mosquito.svg', aria-label='Zika')
