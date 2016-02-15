@@ -1,0 +1,160 @@
+@import url("panels/FoldablePanel/style.css");
+@import url("panels/DockablePanel/style.css");
+/********** styles for simple panel***********/
+.jimu-simple-panel{
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* Esri PopUp */
+.esriPopupWrapper .titlePane {
+  background-color: #6C883D !important;
+}
+
+/* INTERFACE AUTH */
+.esriSignInDialog.dijitDialog  {
+  width: 25em !important;
+  position: absolute !important;
+  opacity: 1 !important;
+  left: 512px !important;
+  top: 213px !important;
+  z-index: 950 !important;
+  border: 1px solid #6C883D !important;
+}
+
+.esriSignInDialog.dijitDialog .dijitDialogTitleBar {
+  background: #6C883D !important;
+  border: none !important;
+  border-bottom: 1px solid #6C883D !important;
+  height: 40px !important;
+  font-size: 1.4em !important;
+  padding-top: 0.4em !important;
+  padding-left: 10px !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogTitleBar .dijitDialogCloseIcon {
+  background: #6C883D !important;
+  font-size: 1em !important;
+  color: #FFFFFF;
+}
+.esriSignInDialog.dijitDialog .dijitDialogTitleBar .dijitDialogCloseIcon:before {
+  font-family: FontAwesome !important;
+  content: "\f00d" !important;
+}
+
+
+.esriSignInDialog.dijitDialog .dijitDialogTitleBar .dijitDialogTitle{
+  color: #FFFFFF !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneActionBar {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneActionBar .esriIdSubmit.dijitButton{
+  border: none !important;
+  box-shadow: none !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneActionBar .esriIdSubmit.dijitButton .dijitButtonNode{
+  background: #6C883D !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  font-size: 1.2em !important;
+  font-family: 'open sans', sans-serif !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneActionBar .dijitReset{
+  border: none !important;
+  box-shadow: none !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneActionBar .dijitReset .dijitButtonNode{
+  background: #f34e3f !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  font-size: 1.2em !important;
+  font-family: 'open sans', sans-serif !important;
+}
+
+.esriSignInDialog.dijitDialog .dijitDialogPaneContentArea .dijitValidationTextBox.dijitTextBoxError {
+  border-color: #f34e3f !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneContentArea .dijitValidationTextBox.dijitTextBoxError .dijitValidationContainer{
+  border-color: #f34e3f !important;
+  background: #f34e3f !important;
+  width: 15px;
+  padding-top: 6px;
+}
+
+.esriSignInDialog.dijitDialog .dijitDialogPaneContentArea .dijitValidationTextBox {
+  min-height: 40px !important;
+  height: 40px !important;
+  box-shadow: none !important;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1.4em !important;
+}
+.esriSignInDialog.dijitDialog .dijitDialogPaneContentArea .dijitValidationTextBox input{
+  min-height: 36px !important;
+  height: 36px !important;
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1.2em !important;
+}
+
+/* COMBOBOX */
+.dijitComboBox .dijitDownArrowButton {
+  height: 100%;
+
+}
+.dijitComboBox .dijitDownArrowButton .dijitInputField.dijitArrowButtonInner {
+  height: 100% !important;
+  width: 20px;
+  margin-left: 3px;
+  border: none;
+}
+table.dojoxCheckedMultiSelectButton {
+  width: 100%;
+}
+.dojoxCheckedMultiSelectButton .dijitArrowButton,
+.dojoxCheckedMultiSelectButton .dijitButtonContents {
+  border: none !important;
+}
+.dijitArrowButton.dijitDownArrowButton{
+  border: none;
+}
+.dojoxCheckedMultiSelectButton {
+  border-color: #d9dde0 !important;
+}
+.dijitTimePickerItem.dijitTimePickerMarker {
+  padding: 3px;
+  color: #4A4A4A;
+  font-weight: normal;
+}
+.dijitTimePickerItem.dijitTimePickerMarker:before {
+  padding-top: 5px;
+  color: #4A4A4A;
+  font-weight: normal;
+
+  font-family: FontAwesome !important;
+  content: "\f017" !important;
+  float: left;
+}
+
+.dijitTextBoxError {
+  box-shadow: 0px 0px 5px #F34E3F !important;
+}
+
+.dijitValidationTextBoxError .dijitValidationContainer {
+  background: none !important;
+  background-color: #F34E3F !important;
+  border: 1px solid #F34E3F !important;
+  width: 20px !important;
+}
+.dijitValidationTextBoxError .dijitValidationContainer:before {
+  width: 100%;
+  font-family: FontAwesome !important;
+  content: "\f12a" !important;
+  float: left;
+  color: #FFFFFF;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+}

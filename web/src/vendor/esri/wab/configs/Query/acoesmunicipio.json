@@ -1,0 +1,1155 @@
+{
+  "queries": [
+    {
+      "name": "Tipo da Ação",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "TPACAO",
+              "label": "TPACAO",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Tipo da Ação é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "TPACAO = 0"
+          }
+        ],
+        "expr": "TPACAO = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Eixo",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "EIXO",
+              "label": "EIXO",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Eixo é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "EIXO = 0"
+          }
+        ],
+        "expr": "EIXO = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Título",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "TITULO",
+              "label": "TITULO",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Título contém",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Descrição",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "DESCRI",
+              "label": "DESCRI",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Descrição contém",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Benefícios",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "BENEFI",
+              "label": "BENEFI",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Benefícios é",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Endereço",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "ENDERE",
+              "label": "ENDERE",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Endereço é",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Data de início",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "DTINIC",
+              "label": "DTINIC",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsOn",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Fri Dec 18 2015"
+            },
+            "interactiveObj": {
+              "prompt": "Data de início está em",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "DTINIC BETWEEN '2015-12-18 00:00:00' AND '2015-12-18 23:59:59'"
+          }
+        ],
+        "expr": "DTINIC BETWEEN '2015-12-18 00:00:00' AND '2015-12-18 23:59:59'"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Data de encerramento",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "DTFIM",
+              "label": "DTFIM",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsOn",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Fri Dec 18 2015"
+            },
+            "interactiveObj": {
+              "prompt": "Data de encerramento está em",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "DTFIM BETWEEN '2015-12-18 00:00:00' AND '2015-12-18 23:59:59'"
+          }
+        ],
+        "expr": "DTFIM BETWEEN '2015-12-18 00:00:00' AND '2015-12-18 23:59:59'"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Responsável",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "RESPON",
+              "label": "RESPON",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Responsável é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "RESPON = 0"
+          }
+        ],
+        "expr": "RESPON = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Fase",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "STATUS",
+              "label": "STATUS",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Fase é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "STATUS = 0"
+          }
+        ],
+        "expr": "STATUS = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Código",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CODIGO",
+              "label": "CODIGO",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Código contém",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Projeto e programa",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "PJPG",
+              "label": "PJPG",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Projeto e programa é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "PJPG = 0"
+          }
+        ],
+        "expr": "PJPG = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Nome do projeto e programa",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "NMPJPG",
+              "label": "NMPJPG",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nome do projeto e programa é",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Plano de governo",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "PLAGOV",
+              "label": "PLAGOV",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Plano de governo é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "PLAGOV = 0"
+          }
+        ],
+        "expr": "PLAGOV = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Diretriz do plano de governo",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "DPLAGOV",
+              "label": "DPLAGOV",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Diretriz do plano de governo contém",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Ação prioritária",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "ACAPRIO",
+              "label": "ACAPRIO",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 0
+            },
+            "interactiveObj": {
+              "prompt": "Ação prioritária é",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "ACAPRIO = 0"
+          }
+        ],
+        "expr": "ACAPRIO = 0"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Votos positivos",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "UPVOTE",
+              "label": "UPVOTE",
+              "shortType": "number",
+              "type": "esriFieldTypeInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "value",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Votos positivos é",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Votos negativos",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "DOWNVO",
+              "label": "DOWNVO",
+              "shortType": "number",
+              "type": "esriFieldTypeInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": false,
+              "type": "value",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Votos negativos é",
+              "hint": ""
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": ""
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    },
+    {
+      "name": "Data de criação",
+      "url": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/pdg_dev_service/FeatureServer/2",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "DATACRI",
+              "label": "DATACRI",
+              "shortType": "date",
+              "type": "esriFieldTypeDate"
+            },
+            "operator": "dateOperatorIsBetween",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value1": "Fri Dec 18 2015",
+              "value2": "Fri Dec 18 2015"
+            },
+            "interactiveObj": {
+              "prompt": "Data de criação está entre",
+              "hint": ""
+            },
+            "caseSensitive": false,
+            "expr": "DATACRI BETWEEN '2015-12-18 00:00:00' AND '2015-12-18 23:59:59'"
+          }
+        ],
+        "expr": "DATACRI BETWEEN '2015-12-18 00:00:00' AND '2015-12-18 23:59:59'"
+      },
+      "popup": {
+        "title": "${TITULO}",
+        "fields": []
+      },
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "objectIdField": "OBJECTID",
+      "orderByFields": []
+    }
+  ]
+}

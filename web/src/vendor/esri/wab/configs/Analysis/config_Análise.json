@@ -1,0 +1,12 @@
+{
+  "analysisTools": [
+    {
+      "name": "ExtractData",
+      "showHelp": true,
+      "showCredits": false,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "toolLabel": "Exportar Dados"
+    }
+  ]
+}

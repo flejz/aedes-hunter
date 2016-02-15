@@ -1,0 +1,258 @@
+{
+  "currentVersion": 10.3,
+  "id": 1,
+  "name": "CITY",
+  "type": "Feature Layer",
+  "serviceItemId": "43c8d880dd484a5cbc70daed67e357b6",
+  "displayField": "NAME",
+  "description": "",
+  "copyrightText": "",
+  "defaultVisibility": true,
+  "editFieldsInfo": {
+    "creationDateField": "CreationDate",
+    "creatorField": "Creator",
+    "editDateField": "EditDate",
+    "editorField": "Editor"
+  },
+  "editingInfo": {
+    "lastEditDate": 1449148116781
+  },
+  "relationships": [
+    {
+      "id": 0,
+      "name": "POI",
+      "relatedTableId": 0,
+      "cardinality": "esriRelCardinalityOneToMany",
+      "role": "esriRelRoleOrigin",
+      "keyField": "GlobalID",
+      "composite": false
+    }
+  ],
+  "isDataVersioned": false,
+  "supportsCalculate": true,
+  "supportsAttachmentsByUploadId": true,
+  "supportsRollbackOnFailureParameter": true,
+  "supportsStatistics": true,
+  "supportsAdvancedQueries": true,
+  "supportsValidateSql": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsApplyEditsWithGlobalIds": true,
+  "advancedQueryCapabilities": {
+    "supportsPagination": true,
+    "supportsQueryWithDistance": true,
+    "supportsReturningQueryExtent": true,
+    "supportsStatistics": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsReturningGeometryCentroid": true
+  },
+  "useStandardizedQueries": true,
+  "geometryType": "esriGeometryPolygon",
+  "minScale": 0,
+  "maxScale": 0,
+  "extent": {
+    "xmin": -5208806.4997000005,
+    "ymin": -2703518.1026999988,
+    "xmax": -5205992.553400001,
+    "ymax": -2701759.3863000013,
+    "spatialReference": {
+      "wkid": 102100,
+      "latestWkid": 3857
+    }
+  },
+  "drawingInfo": {
+    "renderer": {
+      "type": "simple",
+      "symbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+          201,
+          242,
+          208,
+          255
+        ],
+        "outline": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            110,
+            110,
+            110,
+            255
+          ],
+          "width": 0.4
+        }
+      },
+      "label": "",
+      "description": ""
+    },
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "allowGeometryUpdates": true,
+  "hasAttachments": false,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "hasM": false,
+  "hasZ": false,
+  "objectIdField": "OBJECTID",
+  "globalIdField": "GlobalID",
+  "typeIdField": "",
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "nullable": false,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "NAME",
+      "type": "esriFieldTypeString",
+      "alias": "NAME",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "nullable": false,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "POPULATION",
+      "type": "esriFieldTypeInteger",
+      "alias": "POPULATION",
+      "sqlType": "sqlTypeOther",
+      "nullable": true,
+      "editable": true,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "GlobalID",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "",
+      "sqlType": "sqlTypeOther",
+      "length": 38,
+      "nullable": false,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "CreationDate",
+      "type": "esriFieldTypeDate",
+      "alias": "CreationDate",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "nullable": true,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Creator",
+      "type": "esriFieldTypeString",
+      "alias": "Creator",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "nullable": true,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "EditDate",
+      "type": "esriFieldTypeDate",
+      "alias": "EditDate",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "nullable": true,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Editor",
+      "type": "esriFieldTypeString",
+      "alias": "Editor",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "nullable": true,
+      "editable": false,
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "indexes": [
+    {
+      "name": "PK__agroUT_C__F4B70D85432DEA67",
+      "fields": "OBJECTID",
+      "isAscending": true,
+      "isUnique": true,
+      "description": "clustered, unique, primary key"
+    },
+    {
+      "name": "user_12693.agroUT_CITY_Shape_sidx",
+      "fields": "Shape",
+      "isAscending": false,
+      "isUnique": false,
+      "description": "Shape Index"
+    },
+    {
+      "name": "GlobalID_idx",
+      "fields": "GlobalID",
+      "isAscending": true,
+      "isUnique": true,
+      "description": ""
+    },
+    {
+      "name": "CreationDateIndex",
+      "fields": "CreationDate",
+      "isAscending": true,
+      "isUnique": false,
+      "description": "CreationDate Field index"
+    },
+    {
+      "name": "CreatorIndex",
+      "fields": "Creator",
+      "isAscending": false,
+      "isUnique": false,
+      "description": "Creator Field index"
+    },
+    {
+      "name": "EditDateIndex",
+      "fields": "EditDate",
+      "isAscending": true,
+      "isUnique": false,
+      "description": "EditDate Field index"
+    },
+    {
+      "name": "EditorIndex",
+      "fields": "Editor",
+      "isAscending": false,
+      "isUnique": false,
+      "description": "Editor Field index"
+    }
+  ],
+  "types": [],
+  "templates": [
+    {
+      "name": "CITY",
+      "description": "",
+      "drawingTool": "esriFeatureEditToolPolygon",
+      "prototype": {
+        "attributes": {
+          "POPULATION": null,
+          "NAME": " "
+        }
+      }
+    }
+  ],
+  "supportedQueryFormats": "JSON",
+  "hasStaticData": false,
+  "maxRecordCount": 1000,
+  "capabilities": "Create,Delete,Query,Update,Editing,Extract,Sync"
+}

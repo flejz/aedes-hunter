@@ -1,0 +1,4 @@
+{
+    "headers": ["OBJECTID", "UF_ID", "UF", "NAME", "CAPITAL", "SHAPE_STAr", "SHAPE_STLe"],
+    "file": "estados.zip"
+}

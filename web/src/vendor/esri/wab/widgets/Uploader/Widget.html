@@ -1,0 +1,88 @@
+<div>
+  <div class="source-section">
+    <table class="source-table">
+
+      <!-- uploader -->
+      <tr>
+        <td class="first">
+          <span class="source-label">${nls.shapefileSource}</span>
+        </td>
+
+        <td class="second">
+
+          <form hidden method="post" id="uploadForm" enctype="multipart/form-data" >
+              <input name="shapefile" type="file" label="${nls.shapefileSelect}" id="uploadInput" data-dojo-attach-event="change:_onChangeShapefile"/>
+          </form>
+
+          <div data-dojo-attach-point="shapefilePath" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="required:true,trim:true,disabled:true,style:{width:'100%'}"></div>
+        </td>
+
+        <td class="third">
+          <span class="jimu-btn" data-dojo-attach-event="click:_onSelectShapefile">${nls.shapefileSelect}</span>
+          <span class="jimu-btn" data-dojo-attach-event="click:_onProcessShapefile">${nls.shapefileProcess}</span>
+        </td>
+      </tr>
+
+    </table>
+
+    <table class="source-table" id="upload-options" style="display: none">
+
+      <!-- feature selector -->
+      <tr>
+        <td class="first">
+          <span class="source-label">${nls.layerSource}</span>
+        </td>
+
+        <td class="second">
+          <div data-dojo-attach-point="sourceUrl" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="required:true,trim:true,disabled:true,style:{width:'100%'}"></div>
+        </td>
+
+        <td class="third">
+          <span class="jimu-btn" data-dojo-attach-event="click:_onSelectSourceClick">${nls.layerSelect}</span>
+        </td>
+      </tr>
+
+      <!-- operation -->
+      <tr id="upl-selectOperation" style="display:none">
+        <td class="first">
+          <span class="source-label">${nls.selectOperation}</span>
+        </td>
+        <td class="second">
+          <div style="margin-bottom:10px">
+            <input type="radio" id="upl-load" checked="checked" name="upl-operation" />
+            <label for="upl-load" style="margin-left:10px">${nls.operationLoad}</label>
+          </div>
+          <div>
+            <input type="radio" id="upl-update" name="upl-operation" />
+            <label for="upl-update" style="margin-left:10px">${nls.operationUpdate}</label>
+          </div>
+        </td>
+        <td>
+        </td>
+      </tr>
+
+
+      <!-- identifier -->
+      <tr id="upl-identifier" style="display:none">
+        <td class="first">
+          <span class="source-label">${nls.idField}</span>
+        </td>
+        <td class="second">
+          <div data-dojo-attach-point="idField" data-dojo-type="dijit/form/Select" data-dojo-props='style:{width:"100%"}'></div>
+        </td>
+        <td>
+          <div id="idFieldHelp" class="upl-help"></div>
+        </td>
+      </tr>
+
+      <!-- confirm button  -->
+      <tr id="upl-init">
+        <td colspan="3" style="text-align: center; padding-top:25px">
+          <span class="jimu-btn" data-dojo-attach-event="click:_onConfirmClick">${nls.confirm}</span>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  <div data-dojo-attach-point="shelter" data-dojo-type="jimu/dijit/LoadingShelter" data-dojo-props="hidden:true"></div>
+</div>

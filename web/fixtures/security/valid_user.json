@@ -1,0 +1,32 @@
+{
+  "Count": 1,
+  "Items": [
+    {
+      "cpf": {
+        "S": "26726732845"
+      },
+      "social_network": {
+        "S": "facebook"
+      },
+      "departamento": {
+        "S": "FLAT"
+      },
+      "cartao_sus": {
+        "S": "12587654"
+      },
+      "email": {
+        "S": "foo@bar.com"
+      },
+      "telefone": {
+        "S": "(18) 25135951"
+      },
+      "nome": {
+        "S": "Foo Bar"
+      },
+      "cargo": {
+        "S": "fiscal"
+      }
+    }
+  ],
+  "ScannedCount": 1
+}

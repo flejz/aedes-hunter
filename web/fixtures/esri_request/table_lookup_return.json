@@ -1,0 +1,512 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "globalIdFieldName": "GlobalID",
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "TITULO",
+      "type": "esriFieldTypeString",
+      "alias": "Título",
+      "sqlType": "sqlTypeOther",
+      "length": 250,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "COMENT",
+      "type": "esriFieldTypeString",
+      "alias": "Comentário",
+      "sqlType": "sqlTypeOther",
+      "length": 600,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "IDUSUA",
+      "type": "esriFieldTypeString",
+      "alias": "E-mail usuário",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "DTABER",
+      "type": "esriFieldTypeDate",
+      "alias": "Data de abertura",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "DTFECH",
+      "type": "esriFieldTypeDate",
+      "alias": "Data de fechamento",
+      "sqlType": "sqlTypeOther",
+      "length": 8,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "STATUS",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Status",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "STO",
+        "codedValues": [
+          {
+            "name": "Aberta",
+            "code": 0
+          },
+          {
+            "name": "Em Andamento",
+            "code": 1
+          },
+          {
+            "name": "Fechada",
+            "code": 2
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "VALID",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Válido",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "VLO",
+        "codedValues": [
+          {
+            "name": "Não",
+            "code": 0
+          },
+          {
+            "name": "Sim",
+            "code": 1
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "ATIVID",
+      "type": "esriFieldTypeString",
+      "alias": "Atividade",
+      "sqlType": "sqlTypeOther",
+      "length": 600,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "EIXO",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Eixo",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "EIX",
+        "codedValues": [
+          {
+            "name": "Água e Saneamento",
+            "code": 0
+          },
+          {
+            "name": "Conservação Ambiental",
+            "code": 1
+          },
+          {
+            "name": "Educação",
+            "code": 2
+          },
+          {
+            "name": "Energia",
+            "code": 3
+          },
+          {
+            "name": "Governança",
+            "code": 4
+          },
+          {
+            "name": "Mobilidade",
+            "code": 5
+          },
+          {
+            "name": "Planejamento Urbano",
+            "code": 6
+          },
+          {
+            "name": "Poíticas Sociais",
+            "code": 7
+          },
+          {
+            "name": "Saúde",
+            "code": 8
+          },
+          {
+            "name": "Segurança",
+            "code": 9
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "URL",
+      "type": "esriFieldTypeString",
+      "alias": "Link Facebook",
+      "sqlType": "sqlTypeOther",
+      "length": 150,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "UPVOTE",
+      "type": "esriFieldTypeInteger",
+      "alias": "Votos positivos",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "DOWNVO",
+      "type": "esriFieldTypeInteger",
+      "alias": "Votos negativos",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "TPUSUA",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Tipo usuário",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "TPU",
+        "codedValues": [
+          {
+            "name": "Cidadão",
+            "code": 0
+          },
+          {
+            "name": "Servidor",
+            "code": 1
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "GlobalID",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "GlobalID",
+      "sqlType": "sqlTypeOther",
+      "length": 38,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "PROTOC",
+      "type": "esriFieldTypeString",
+      "alias": "Protocolo",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "PJPG",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Projeto e programa",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "PEP",
+        "codedValues": [
+          {
+            "name": "Não",
+            "code": 0
+          },
+          {
+            "name": "Sim",
+            "code": 1
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "NMPJPG",
+      "type": "esriFieldTypeString",
+      "alias": "Nome do projeto e programa",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "PLAGOV",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Plano de governo",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "PDG",
+        "codedValues": [
+          {
+            "name": "Não",
+            "code": 0
+          },
+          {
+            "name": "Sim",
+            "code": 1
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "DPLAGOV",
+      "type": "esriFieldTypeString",
+      "alias": "Diretriz do plano de governo",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "ACAPRIO",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Ação prioritária",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "ACP",
+        "codedValues": [
+          {
+            "name": "Não",
+            "code": 0
+          },
+          {
+            "name": "Sim",
+            "code": 1
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "TIPOOCR",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "Tipo Ocorrência",
+      "sqlType": "sqlTypeOther",
+      "domain": {
+        "type": "codedValue",
+        "name": "TPO",
+        "codedValues": [
+          {
+            "name": "Acessibilidade",
+            "code": 0
+          },
+          {
+            "name": "Água",
+            "code": 1
+          },
+          {
+            "name": "Árvore",
+            "code": 2
+          },
+          {
+            "name": "Barulho",
+            "code": 3
+          },
+          {
+            "name": "Coleta de Lixo",
+            "code": 4
+          },
+          {
+            "name": "Convservação / Manutenção",
+            "code": 5
+          },
+          {
+            "name": "Educação",
+            "code": 6
+          },
+          {
+            "name": "Empresa Irregular",
+            "code": 7
+          },
+          {
+            "name": "Esgoto",
+            "code": 8
+          },
+          {
+            "name": "Ilumnicação e Energia",
+            "code": 9
+          },
+          {
+            "name": "Limpeza Urbana",
+            "code": 10
+          },
+          {
+            "name": "Obra / Ocupação Irregular",
+            "code": 11
+          },
+          {
+            "name": "Obra Pública",
+            "code": 12
+          },
+          {
+            "name": "Pavimentação",
+            "code": 13
+          },
+          {
+            "name": "Pedestre e Ciclistas",
+            "code": 14
+          },
+          {
+            "name": "Poda e Capina",
+            "code": 15
+          },
+          {
+            "name": "Poluição",
+            "code": 16
+          },
+          {
+            "name": "Queimada",
+            "code": 17
+          },
+          {
+            "name": "Ruas e Estradas",
+            "code": 18
+          },
+          {
+            "name": "Saúde",
+            "code": 19
+          },
+          {
+            "name": "Segurança",
+            "code": 20
+          },
+          {
+            "name": "Sinalização",
+            "code": 21
+          },
+          {
+            "name": "Trânsito",
+            "code": 22
+          },
+          {
+            "name": "Transporte Público",
+            "code": 23
+          },
+          {
+            "name": "Varrição",
+            "code": 24
+          }
+        ]
+      },
+      "defaultValue": null
+    },
+    {
+      "name": "DEPTO",
+      "type": "esriFieldTypeString",
+      "alias": "Departamento",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "CARGO",
+      "type": "esriFieldTypeString",
+      "alias": "Cargo",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "NOME",
+      "type": "esriFieldTypeString",
+      "alias": "Nome",
+      "sqlType": "sqlTypeOther",
+      "length": 50,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "CARSUS",
+      "type": "esriFieldTypeString",
+      "alias": "Cartão Sus",
+      "sqlType": "sqlTypeOther",
+      "length": 70,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "CPF",
+      "type": "esriFieldTypeString",
+      "alias": "CPF",
+      "sqlType": "sqlTypeOther",
+      "length": 15,
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1,
+        "TITULO": " Árvore Tocando a Rede Elétrica",
+        "COMENT": " ",
+        "IDUSUA": "rpepato@img.com.br",
+        "DTABER": -2209161600000,
+        "DTFECH": null,
+        "STATUS": 0,
+        "VALID": 0,
+        "ATIVID": null,
+        "EIXO": 1,
+        "URL": null,
+        "UPVOTE": 0,
+        "DOWNVO": 0,
+        "TPUSUA": 1,
+        "GlobalID": "46329a70-e38e-479b-a5d6-be4e65a8880b",
+        "PROTOC": null,
+        "PJPG": 0,
+        "NMPJPG": null,
+        "PLAGOV": 0,
+        "DPLAGOV": null,
+        "ACAPRIO": 0,
+        "TIPOOCR": 2,
+        "DEPTO": null,
+        "CARGO": null,
+        "NOME": null,
+        "CARSUS": null,
+        "CPF": null
+      },
+      "geometry": {
+        "x": -5107456.158950525,
+        "y": -2655641.8521160996
+      }
+    }
+  ]
+}

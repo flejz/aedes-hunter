@@ -1,0 +1,12 @@
+{
+  "serviceUrl": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/agroUT/FeatureServer/0/",
+  "token": "VALID_TOKEN",
+  "operationType": "Insert",
+  "primaryKey": "CITYID",
+  "ignoreFields": [],
+  "headers": ["NAME", "CITYID", "INFO", "SHAPE"],
+  "values": [
+    ["ALEX", 99, "VIDOTTO", {"x": 1, "y": 0}],
+    ["VIDOTTO", 100, "ALEX", {"x": 1, "y": 0}]
+  ]
+}

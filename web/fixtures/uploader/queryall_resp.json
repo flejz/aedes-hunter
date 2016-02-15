@@ -1,0 +1,101 @@
+{
+  "objectIdFieldName" : "OBJECTID",
+  "globalIdFieldName" : "GlobalID",
+  "geometryType" : "esriGeometryPoint",
+  "spatialReference" : {
+    "wkid" : 102100,
+    "latestWkid" : 3857
+  },
+  "fields" : [
+    {
+      "name" : "OBJECTID",
+      "type" : "esriFieldTypeOID",
+      "alias" : "OBJECTID",
+      "sqlType" : "sqlTypeOther",
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "CITYID",
+      "type" : "esriFieldTypeInteger",
+      "alias" : "CITY_ID",
+      "sqlType" : "sqlTypeOther",
+      "domain" : null,
+      "defaultValue" : null
+    }
+  ],
+  "features" : [
+    {
+      "attributes" : {
+        "OBJECTID" : 2,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 3,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 4,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 5,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 6,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 7,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 8,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 9,
+        "CITYID" : 3
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 10,
+        "CITYID" : 4
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 11,
+        "CITYID" : 4
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 12,
+        "CITYID" : 4
+      }
+    },
+    {
+      "attributes" : {
+        "OBJECTID" : 13,
+        "CITYID" : 6
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "serviceUrl": "http://services6.arcgis.com/um4RQnU40VyzFeR6/arcgis/rest/services/agroUT/FeatureServer/0/",
+  "token": "48-b-2CCPBRGML1sL1O1fypoLewJ0OkIHN0HYCKkfvkxiFGQcFatGwXcokKFLDdk6wYLuoPJs_-s9hcChrm-_4XC-FG7ZVZcoMcFTuR_dk3QO51WEjx3EoGkhdSfhpyVfmK6XJYrgeOmqiLS_ln6eg..",
+  "operationType": "Update",
+  "primaryKey": "CITYID",
+  "ignoreFields": [],
+  "headers": ["NAME", "CITYID", "INFO", "SHAPE"],
+  "values": [
+    ["AUTO", 10, "VIDOTTO", {"x": 1, "y": 0}],
+    ["VIDOTTO", 9, "AUTO", {"x": 1, "y": 0} ]
+  ]
+}

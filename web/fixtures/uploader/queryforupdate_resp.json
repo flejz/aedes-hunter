@@ -1,0 +1,35 @@
+{
+	"objectIdFieldName": "OBJECTID",
+	"globalIdFieldName": "GlobalID",
+	"geometryType": "esriGeometryPoint",
+	"spatialReference": {
+		"wkid": 102100,
+		"latestWkid": 3857
+	},
+	"fields": [{
+		"name": "OBJECTID",
+		"type": "esriFieldTypeOID",
+		"alias": "OBJECTID",
+		"sqlType": "sqlTypeOther",
+		"domain": null,
+		"defaultValue": null
+	}, {
+		"name": "CITYID",
+		"type": "esriFieldTypeInteger",
+		"alias": "CITY_ID",
+		"sqlType": "sqlTypeOther",
+		"domain": null,
+		"defaultValue": null
+	}],
+	"features": [{
+		"attributes": {
+			"OBJECTID": 8,
+			"CITYID": 9
+		}
+	}, {
+		"attributes": {
+			"OBJECTID": 9,
+			"CITYID": 10
+		}
+	}]
+}
