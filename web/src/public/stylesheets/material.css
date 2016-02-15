@@ -24,3 +24,5 @@ html, body, #map{
   .md-custom-color-2{ background-color: #0f0 !important;}
   .md-custom-color-3{ background-color: #00f !important;}
   .md-custom-color-4{ background-color: #ff0 !important;}
+
+  md-tooltip{ z-index: 1000; }

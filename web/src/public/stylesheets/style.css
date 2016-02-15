@@ -4,10 +4,26 @@ html, body, #map{
   margin: 0;
   width: 100%;
 }
-#fab{
-	bottom: 20px;
-	display: block;
+
+#config,
+#types,
+#gps{
+  display: block;
 	position: absolute;
+  z-index: 1000;
+}
+
+#config{
+  bottom: 20px;
+	left: 0px;
+}
+
+#types{
+	bottom: 90px;
 	right: 0px;
-	z-index: 1000;
+}
+
+#gps{
+	bottom: 20px;
+	right: 0px;
 }
