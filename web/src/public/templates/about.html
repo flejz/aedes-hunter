@@ -1,0 +1,48 @@
+
+<!-- saved from url=(0091)https://material.angularjs.org/latest/demo-partials/dialog/demoBasicUsage/dialog1.tmpl.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css"></style>
+  </head>
+  <body>
+    <md-dialog aria-label="Mango (Fruit)" ng-cloak="" md-theme="defaultTheme" >
+      <form>
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2>Sobre</h2>
+            <span flex=""></span>
+            <md-button class="md-icon-button" ng-click="close()">
+              <md-icon md-svg-src="images/close.svg" aria-label="Fechar"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+          <div class="md-dialog-content">
+            <h2>Aedes Hunter</h2>
+            <p>
+              Este aplicativo foi desenvolvido com a finalidade de ajudar a população a combater o mosquito Aedes Aegypti, transmissor das doenças Dengue, Zika e a febre Chikungunya.
+            </p>
+            <p>
+              Este aplicativo é gratuíto para uso da população.
+            </p>
+            <p>
+              @Copyright jDeveloperBR
+            </p>
+          </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+          <md-button href="http://twitter.com/jdeveloperbr" target="_blank" md-autofocus="">
+            Twitter @jDeveloperBR
+          </md-button>
+          <span flex=""></span>
+          <md-button ng-click="close()" style="margin-right:20px;">
+            Fechar
+          </md-button>
+        </md-dialog-actions>
+      </form>
+    </md-dialog>
+</body>
+</html>

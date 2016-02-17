@@ -1,16 +1,9 @@
 html(lang='en')
   head
     include ./essential/styles.jade
-  body(ng-app='app', ng-controller="AppCtrl", md-theme="defaultTheme", layout="column")
+  body(ng-app='app', ng-controller="AppCtrl", md-theme="{{theme}}", layout="column")
 
-    md-toolbar
-      .md-toolbar-tools
-        h2
-          span Aedes Hunter
-        span(flex='')
-        md-button.md-icon-button(aria-label='Informações', ng-click="showAdvanced()")
-          md-tooltip(md-direction='bottom', md-visible='false') Sobre
-          md-icon(md-svg-icon='images/information.svg')
+    include ./fragments/top.jade
 
 
     md-content
