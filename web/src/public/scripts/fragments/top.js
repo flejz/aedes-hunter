@@ -110,6 +110,7 @@ app.controller('GeocodeCtrl', function DemoCtrl($timeout, $q, $log) {
 
 //** Initiales the Google Places API (Autocomplete)
 var geocoder;
+
 function initAutocomplete() {
 
   // Create the autocomplete object, restricting the search to geographical
@@ -122,19 +123,28 @@ function initAutocomplete() {
   // When the user selects an address from the dropdown, populate the address
   // fields in the form.
   autocomplete.addListener('place_changed', function() {
-    debugger;
-    // Get the place details from the autocomplete object.
-    var place = autocomplete.getPlace();
-    geocoder.adresses = [];
 
-    // Get each component of the address from the place details
-    // and fill the corresponding field on the form.
-    for (var i = 0; i < place.address_components.length; i++) {
-      var addressType = place.address_components[i].types[0];
-      if (componentForm[addressType]) {
-        var val = place.address_components[i][componentForm[addressType]];
-        geocoder.adresses.push(val);
+    // Get the place details from the autocomplete object.
+    var place = autocomplete.getPlace(),
+      geocoder = new google.maps.Geocoder();
+
+    // geocoding the address
+    geocoder.geocode({
+      'address': place.formatted_address
+    }, function(results, status) {
+      if (status === google.maps.GeocoderStatus.OK) {
+
+        //getting the latlong, adding to the map and zoom to it
+        var latlng = [results[0].geometry.location.lat(), results[0].geometry.location.lng()];
+        var marker = L.marker(latlng).addTo(map);
+        map.setView(latlng, 15);
+
+      } else {
+        alert('Geocode was not successful for the following reason: ' +
+          status);
       }
-    }
+    });
+
+    geocoder.adresses = place.address_components;
   });
 };

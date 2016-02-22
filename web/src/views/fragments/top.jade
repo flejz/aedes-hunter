@@ -8,14 +8,8 @@ md-toolbar.md-hue-1
     h2
       span Aedes Hunter |
 
-    md-input-container(md-theme='input', flex='')
-      label  
-      input(ng-model='search.who', placeholder='enter search')
-
-
-    md-input-container.md-block.md-mini(md-no-float='')
-      md-icon(md-svg-src='images/mosquito.svg', style='display:inline-block;')
-      input(id='geocoder', ng-model='user.address', type='text', placeholder='Address')
+    md-input-container.md-margin(md-no-float='')
+      input(id='geocoder', placeholder='Digite o endereço...')
       
 
     span(flex='')
